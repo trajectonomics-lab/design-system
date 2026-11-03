@@ -1,2 +1,2 @@
 # design-system
-design-system for trajectonomic lab
+design-system for trajectonomics
