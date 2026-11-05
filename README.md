@@ -1,11 +1,9 @@
 # @trajectonomics/design-system
 
-Design system and tokens for Trajectonomics applications.
+The official design system package for [Trajectonomics](https://github.com/trajectonomics).
 
 [![CI](https://github.com/trajectonomics/design-system/actions/workflows/ci.yml/badge.svg)](https://github.com/trajectonomics/design-system/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-
-Part of the [Trajectonomics](https://github.com/trajectonomics) ecosystem.
 
 ---
 
@@ -15,17 +13,13 @@ Part of the [Trajectonomics](https://github.com/trajectonomics) ecosystem.
 bun add @trajectonomics/design-system
 ```
 
-## Getting Started
+## Quick Start
 
 ```typescript
-import { colors, radii, spacing, createTheme } from "@trajectonomics/design-system"
+import { getTemplateInfo } from "@trajectonomics/design-system"
 
-const theme = createTheme({
-	canvas: colors.canvasCream,
-	ink: colors.inkBlack,
-	radius: radii.md,
-})
-console.log(theme)
+const info = getTemplateInfo()
+console.log(info)
 ```
 
 ---

@@ -1,23 +1,17 @@
-/**
- * @trajectonomics/design-system public API.
- */
+/** Basic metadata describing a repository package initialized from this template. */
+export interface TemplateInfo {
+	readonly name: string
+	readonly version: string
+	readonly initialized: boolean
+}
 
-export {
-	createTheme,
-	defaultTheme,
-	type Theme,
-	type ThemeConfig,
-	ThemeError,
-	ThemeErrorCode,
-} from "./theme"
-export {
-	type Colors,
-	type ColorToken,
-	colors,
-	type Radii,
-	type RadiusToken,
-	radii,
-	type Spacing,
-	type SpacingToken,
-	spacing,
-} from "./tokens"
+/**
+ * Returns package information verifying the template structure is operational.
+ */
+export function getTemplateInfo(): TemplateInfo {
+	return Object.freeze({
+		name: "@trajectonomics/design-system",
+		version: "0.0.0-development",
+		initialized: true,
+	})
+}
