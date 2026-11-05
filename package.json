@@ -1,7 +1,7 @@
 {
 	"name": "@trajectonomics/design-system",
 	"version": "0.0.0-development",
-	"description": "Design system and tokens for Trajectonomics applications",
+	"description": "Standard technical repository template for Trajectonomics libraries and services",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
@@ -38,6 +38,7 @@
 		"tag": "latest"
 	},
 	"scripts": {
+		"setup": "bun .agents/skills/setup-the-repo/scripts/setup.ts",
 		"build": "tsdown",
 		"test": "bun test",
 		"typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.test.json",
