@@ -1,23 +1,20 @@
-# Domain Glossary
+# Domain Glossary: @trajectonomics/design-system
 
-Ubiquitous language for this repository. Every concept named here has an exact definition that code, tests, commit messages, and PR titles must use. Synonyms in a diff are defects.
-
-## Template Guide
-
-When instantiating a new repository from this template:
-1. Define your core domain entities, value objects, and states below.
-2. In single-context repositories, maintain this single `GLOSSARY.md` at repo root.
-3. In multi-context repositories, place `GLOSSARY-MAP.md` at root pointing to each sub-context's `GLOSSARY.md`.
-
----
+Ubiquitous language for `trajectonomics/design-system`. Every term defined here is binding across code, tests, documentation, and PR titles. Synonyms in a diff are defects.
 
 ## Core Terms
 
+### Design Token
+A named, platform-agnostic design decision (color, spacing, typography, etc.) with a typed value.
+
+### Primitive Token
+A raw, context-free Design Token value such as a specific color or size. Primitive Tokens never reference another token.
+
+### Semantic Token
+A Design Token named by purpose (for example `color.text.primary`) that aliases a Primitive Token.
+
+### Theme
+A named set of values that resolves every Semantic Token for a given context (for example `light` or `dark`).
+
 ### Invariant
-A rule or condition that must hold true at all times across all state transitions within this system.
-
-### Pure Core
-The isolated domain logic of a package that executes deterministically without I/O, network calls, filesystem access, system clock dependencies, or global mutable state.
-
-### Error Code
-A strictly typed, distinct machine-readable identifier assigned to every rejection rule across the package API.
+A rule or condition that must hold true across all state transitions in this system.
